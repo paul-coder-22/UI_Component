@@ -1,0 +1,27 @@
+.main {
+  width: 100%;
+  background-color: var(--clr-background);
+}
+
+.main > * {
+  margin: var(--margin-md) 0;
+}
+.component-intro > * {
+  padding: var(--padding-sm);
+  width: 100%;
+}
+
+.component-code-examples {
+  border: 1px solid;
+  border-radius: 3px;
+  padding: var(--padding-md);
+  width: 100%;
+  flex-wrap: wrap;
+}
+.component-code-wrapper {
+  width: 100%;
+  max-height: 350px;
+  box-shadow: var(--box-shadow-light);
+  border-radius: 3px;
+  padding: var(--padding-md) 0;
+}

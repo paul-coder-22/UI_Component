@@ -1,0 +1,15 @@
+@import url(./navbar.css);
+@import url(./main.css);
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+.footer {
+  margin-top: var(--margin-large);
+  padding: var(--padding-md);
+  height: max-content;
+}
+.footer-actions li {
+  margin: 0 var(--margin-sm);
+}
