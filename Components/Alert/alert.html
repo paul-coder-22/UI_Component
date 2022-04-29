@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/30e8ebdaf5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../Css/primary.css">
+    <link rel="stylesheet" href="../../Components/component.css">
+    <script src="./alert.js" defer></script>
+    <title>Alert | dynoCss</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav-bar flex-row-spc-btw">
+            <div class="nav-header">
+                <h1 class="nav-logo"><a href="./index.html"></a>dynoCss</h1>
+            </div>
+            <nav class="nav-actions">
+                <ul class="flex-row-spc-btw">
+                    <li><i class="fa-brands fa-2x fa-github"></i></li>
+                </ul>
+            </nav>
+        </div>
+        <hr class="hr">
+        <div class="grid-doc-layout">
+            <main class="main">
+                <div class="component-intro">
+                    <h2>Alert</h2>
+                    <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate
+                        the</p>
+                    <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate
+                        the visual</p>
+                </div>
+                <div class="componet-sub-heading">
+                    <h3>Solid Alert</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus atque alias deserunt asperiores
+                        non doloremque, recusandae et voluptatem quaerat laborum neque quod </p>
+                </div>
+                <div class="component-code-examples">
+                    <div class="alert-box alert-primary">A Primary alert.</div>
+                    <div class="alert-box alert-secondary">A Secondary alert.</div>
+                    <div class="alert-box alert-success">A success alert.</div>
+                    <div class="alert-box alert-danger">A Danger alert.</div>
+                    <div class="alert-box alert-warning">A Warning alert.</div>
+                    <div class="alert-box alert-info">A Primary alert.</div>
+                    <div class="alert-box alert-light">A Light alert.</div>
+                    <div class="alert-box alert-dark">A Dark alert.</div>
+                </div>
+                <div class="component-code-wrapper">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28248%2C248%2C248%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert-box%2520alert-primary%2522%253EA%2520Primary%2520alert.%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520alert-secondary%2522%253EA%2520Secondary%2520alert.%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520alert-success%2522%253EA%2520success%2520alert.%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520alert-danger%2522%253EA%2520Danger%2520alert.%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520alert-warning%2522%253EA%2520Warning%2520alert.%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520alert-info%2522%253EA%2520Primary%2520alert.%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520alert-light%2522%253EA%2520Light%2520alert.%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520alert-dark%2522%253EA%2520Dark%2520alert.%253C%252Fdiv%253E%250A"
+                        style="width: 665px; height: 337px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+
+
+
+                <div class="componet-sub-heading">
+                    <h3>Live example</h3>
+                    <p>Click the button below to show an alert (hidden with inline styles to start), then dismiss (and
+                        destroy) it with the built-in close button. </p>
+                </div>
+                <div class="component-code-examples">
+                    <div id="alert-box-container">
+
+                    </div>
+                    <button class="btn btn-primary" id="addAlertBoxes">Show Live Alert</button>
+                </div>
+                <div class="component-code-wrapper">
+                    <!--  <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28248%2C248%2C248%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-box%2520alert-primary%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520A%2520simple%2520primary%2520alert%2520with%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522alert-link%2522%253Ean%2520example%2520link%253C%252Fa%253E%2520.%2520Give%2520it%2520a%2520click%2520if%2520you%2520like.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-box%2520alert-secondary%2522%253EA%2520simple%2520secondary%2520alert%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522alert-link%2522%253Ean%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520example%2520link%253C%252Fa%253E.%2520Give%2520it%2520a%2520click%2520if%2520you%2520like.%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-box%2520alert-success%2522%253EA%2520simple%2520success%2520alert%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522alert-link%2522%253Ean%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520example%2520link%253C%252Fa%253E.%2520Give%2520it%2520a%2520click%2520if%2520you%2520like.%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-box%2520alert-danger%2522%253EA%2520simple%2520Danger%2520alert%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522alert-link%2522%253Ean%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520example%2520link%253C%252Fa%253E.%2520Give%2520it%2520a%2520click%2520if%2520you%2520like.%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-box%2520alert-warning%2522%253EA%2520simple%2520Warning%2520alert%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522alert-link%2522%253Ean%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520example%2520link%253C%252Fa%253E.%2520Give%2520it%2520a%2520click%2520if%2520you%2520like.%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-box%2520alert-info%2522%253EA%2520simple%2520Primary%2520alert%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522alert-link%2522%253Ean%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520example%2520link%253C%252Fa%253E.%2520Give%2520it%2520a%2520click%2520if%2520you%2520like.%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-box%2520alert-light%2522%253EA%2520simple%2520Light%2520alert%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522alert-link%2522%253Ean%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520example%2520link%253C%252Fa%253E.%2520Give%2520it%2520a%2520click%2520if%2520you%2520like.%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-box%2520alert-dark%2522%253EA%2520simple%2520Dark%2520alert%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522alert-link%2522%253Ean%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520example%2520link%253C%252Fa%253E.%2520Give%2520it%2520a%2520click%2520if%2520you%2520like.%253C%252Fdiv%253E%250A"
+                        style="width: 1024px; height: 653px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe> -->
+                </div>
+
+
+
+                <div class="componet-sub-heading">
+                    <h3>Link Color</h3>
+                    <p>Use the .alert-link utility class to quickly provide matching colored links within any alert.</p>
+                </div>
+                <div class="component-code-examples">
+                    <div class="alert-box alert-primary">
+                        A simple primary alert with
+                        <a href="#" class="alert-link">an example link</a> . Give it a click if you like.
+                    </div>
+                    <div class="alert-box alert-secondary">A simple secondary alert <a href="#" class="alert-link">an
+                            example link</a>. Give it a click if you like.</div>
+                    <div class="alert-box alert-success">A simple success alert <a href="#" class="alert-link">an
+                            example link</a>. Give it a click if you like.</div>
+                    <div class="alert-box alert-danger">A simple Danger alert <a href="#" class="alert-link">an
+                            example link</a>. Give it a click if you like.</div>
+                    <div class="alert-box alert-warning">A simple Warning alert <a href="#" class="alert-link">an
+                            example link</a>. Give it a click if you like.</div>
+                    <div class="alert-box alert-info">A simple Primary alert <a href="#" class="alert-link">an
+                            example link</a>. Give it a click if you like.</div>
+                    <div class="alert-box alert-light">A simple Light alert <a href="#" class="alert-link">an
+                            example link</a>. Give it a click if you like.</div>
+                    <div class="alert-box alert-dark">A simple Dark alert <a href="#" class="alert-link">an
+                            example link</a>. Give it a click if you like.</div>
+                </div>
+
+                <div class="component-code-wrapper">
+                    <!-- <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28248%2C248%2C248%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=21px&dsblur=68px&wc=true&wa=true&pv=18px&ph=27px&ln=false&fl=1&fm=Hack&fs=11.5px&lh=147%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert-box%2520alert-secondary%2522%253E%250AA%2520simple%2520secondary%2520alert%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522alert-link%2522%253Ean%2520example%2520link%253C%252Fa%253E.%2520Give%2520it%2520a%2520click%2520if%2520you%2520like.%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520alert-success%2522%253EA%2520simple%2520success%2520alert%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522alert-link%2522%253Ean%2520example%2520link%253C%252Fa%253E.%2520%250AGive%2520it%2520a%2520click%2520if%2520you%2520like.%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520alert-danger%2522%253EA%2520simple%2520Danger%2520alert%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522alert-link%2522%253Ean%250Aexample%2520link%253C%252Fa%253E.%2520Give%2520it%2520a%2520click%2520if%2520you%2520like.%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520alert-warning%2522%253EA%2520simple%2520Warning%2520alert%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522alert-link%2522%253Ean%250Aexample%2520link%253C%252Fa%253E.%2520Give%2520it%2520a%2520click%2520if%2520you%2520like.%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520alert-info%2522%253EA%2520simple%2520Primary%2520alert%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522alert-link%2522%253Ean%250Aexample%2520link%253C%252Fa%253E.%2520Give%2520it%2520a%2520click%2520if%2520you%2520like.%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520alert-light%2522%253EA%2520simple%2520Light%2520alert%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522alert-link%2522%253Ean%250Aexample%2520link%253C%252Fa%253E.%2520Give%2520it%2520a%2520click%2520if%2520you%2520like.%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-box%2520alert-dark%2522%253EA%2520simple%2520Dark%2520alert%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522alert-link%2522%253Ean%250Aexample%2520link%253C%252Fa%253E.%2520Give%2520it%2520a%2520click%2520if%2520you%2520like.%250A%253C%252Fdiv%253E%250A"
+                        style="width: 858px; height: 465px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe> -->
+                </div>
+
+
+                <div class="componet-sub-heading">
+                    <h3>Additional content</h3>
+                    <p>Alerts can also contain additional HTML elements like headings, paragraphs and dividers.</p>
+                </div>
+                <div class="component-code-examples">
+                    <div class="alert-box alert-success">
+                        <h4 class="alert-heading">Well Done !</h4>
+                        <p>Aww yeah, you successfully read this important alert message. This example text is going to
+                            run a bit longer so that you can see how spacing within an alert works with this kind of
+                            content.</p>
+                        <hr class="hr">
+                        <p>Whenever you need to, be sure to use margin utilities to keep things nice
+                            and tidy.</p>
+                    </div>
+                </div>
+                <div class="component-code-wrapper">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28248%2C248%2C248%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=21px&dsblur=68px&wc=true&wa=true&pv=18px&ph=27px&ln=false&fl=1&fm=Hack&fs=11.5px&lh=147%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-box%2520alert-success%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch4%2520class%253D%2522alert-heading%2522%253EWell%2520Done%2520%21%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EAww%2520yeah%252C%2520you%2520successfully%2520read%2520this%2520important%2520alert%2520message.%2520This%2520example%2520text%2520is%2520going%2520to%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520run%2520a%2520bit%2520longer%2520so%2520that%2520you%2520can%2520see%2520how%2520spacing%2520within%2520an%2520alert%2520works%2520with%2520this%2520kind%2520of%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520content.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Chr%2520class%253D%2522hr%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EWhenever%2520you%2520need%2520to%252C%2520be%2520sure%2520to%2520use%2520margin%2520utilities%2520to%2520keep%2520things%2520nice%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520and%2520tidy.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+                        style="width: 899px; height: 245px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+
+
+                <div class="componet-sub-heading">
+                    <h3>Icons</h3>
+                    <p>Similarly, you can use flexbox utilities and Bootstrap Icons to create alerts with icons.
+                        Depending on your icons and content, you may want to add more utilities or custom styles.
+                    </p>
+                </div>
+
+                <div class="component-code-examples ">
+                    <div class="alert-box alert-primary flex-row-start-center">
+                        <span>
+                            <i class="fa-solid fa-2x fa-circle-exclamation"></i>
+                        </span>
+                        <div>
+                            A Primary alert.
+                        </div>
+                    </div>
+                    <div class="alert-box alert-success flex-row-start-center">
+                        <span>
+                            <i class="fa-solid fa-2x fa-circle-check"></i>
+                        </span>
+                        <div>
+                            A Primary alert.
+                        </div>
+                    </div>
+                    <div class="alert-box alert-warning flex-row-start-center">
+                        <span>
+                            <i class="fa fa-2x fa-exclamation-triangle"></i>
+                        </span>
+                        <div>
+                            A Primary alert.
+                        </div>
+                    </div>
+                    <div class="alert-box alert-danger flex-row-start-center">
+                        <span>
+                            <i class="fa fa-2x fa-exclamation-triangle"></i>
+                        </span>
+                        <div>
+                            A Primary alert.
+                        </div>
+                    </div>
+                </div>
+                <div class="component-code-wrapper">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28248%2C248%2C248%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=21px&dsblur=68px&wc=true&wa=true&pv=18px&ph=14px&ln=false&fl=0&fm=Hack&fs=10.5px&lh=90%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-box%2520alert-primary%2520flex-row-start-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-2x%2520fa-circle-exclamation%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520A%2520Primary%2520alert.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-box%2520alert-success%2520flex-row-start-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-2x%2520fa-circle-check%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520A%2520Primary%2520alert.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-box%2520alert-warning%2520flex-row-start-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-2x%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520A%2520Primary%2520alert.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-box%2520alert-danger%2520flex-row-start-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-2x%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520A%2520Primary%2520alert.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+                        style="width: 561px; height: 395px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+
+            </main>
+        </div>
+        <hr class="hr">
+
+        <footer class="footer flex-row-spc-btw">
+            <p>Paul Micheal</p>
+            <nav class="footer-actions">
+                <ul class="flex-row-center-center">
+                    <li><i class="fa-brands fa-2x fa-github"></i></li>
+                    <li><i class="fa-brands fa-2x fa-twitter"></i></li>
+                    <li><i class="fa-brands fa-2x fa-linkedin"></i></li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+</body>
+
+</html>

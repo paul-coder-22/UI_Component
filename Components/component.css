@@ -3,3 +3,5 @@
 /*  Components  */
 
 @import url(./Avatar/avatar.css);
+@import url(./Alert/alert.css);
+@import url(./Button/button.css);

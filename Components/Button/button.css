@@ -1,0 +1,16 @@
+.btn {
+  display: inline-block;
+  padding: var(--padding-sm) var(--padding-large);
+  color: var(--clr-black);
+  border: none;
+  margin: var(--margin-sm);
+  cursor: pointer;
+  font-weight: var(--fw-bold-600);
+  border-radius: 3px;
+}
+
+.btn-primary {
+  color: #055160;
+  background-color: #cff4fc;
+  border: 2px solid #b6effb;
+}
