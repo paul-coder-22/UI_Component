@@ -205,3 +205,47 @@ p {
 .font-size-xl {
   font-size: 1.5rem;
 }
+
+/* position */
+
+.position-relative {
+  position: relative;
+}
+.position-absolute {
+  position: absolute;
+}
+.top-0 {
+  top: 0 !important;
+}
+.start-100 {
+  left: 100% !important;
+}
+.translate-middle {
+  transform: translate(-50%, -50%) !important;
+}
+
+/* Round Pills */
+
+.rounded-pill {
+  border-radius: 50rem !important;
+}
+
+/* Large - buttons */
+
+.btn-lg {
+  padding: 0.5rem 1rem !important;
+  font-size: 1.25rem !important;
+  border-radius: 0.3rem !important;
+}
+
+/* Small Buttons */
+.btn-sm {
+  padding: 0.25rem 0.5rem !important;
+  font-size: 0.875rem !important;
+  border-radius: 0.2rem !important;
+}
+/* Buttons disable property */
+.btn:disabled {
+  pointer-events: none;
+  opacity: 0.65;
+}
