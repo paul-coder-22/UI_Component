@@ -17,6 +17,7 @@
   padding: var(--padding-md);
   width: 100%;
   flex-wrap: wrap;
+  overflow: auto;
 }
 .component-code-wrapper {
   width: 100%;

@@ -249,3 +249,15 @@ p {
   pointer-events: none;
   opacity: 0.65;
 }
+
+/* Auto margin */
+.mx-auto {
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+/* block elements */
+
+.d-block {
+  display: block !important;
+}

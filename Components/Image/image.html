@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/30e8ebdaf5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../Css/primary.css">
+    <link rel="stylesheet" href="../../Components/component.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav-bar flex-row-spc-btw">
+            <div class="nav-header">
+                <h1 class="nav-logo"><a href="./index.html"></a>dynoCss</h1>
+            </div>
+            <nav class="nav-actions">
+                <ul class="flex-row-spc-btw">
+                    <li><i class="fa-brands fa-2x fa-github"></i></li>
+                </ul>
+            </nav>
+        </div>
+        <hr class="hr">
+        <div class="grid-doc-layout">
+            <main class="main">
+                <div class="component-intro">
+                    <h2>Images</h2>
+                    <p>Documentation and examples for opting images into responsive behavior (so they never become wider
+                        than their parent) and add lightweight styles to them—all via classes.
+                    </p>
+                </div>
+
+                <div class="componet-sub-heading">
+                    <h3>Responsive images</h3>
+                    <p>Images in Bootstrap are made responsive with .img-fluid. This applies max-width: 100%; and
+                        height: auto; to the image so that it scales with the parent width.</p>
+                </div>
+
+                <div class="component-code-examples">
+                    <img class="img-fluid" src="../Assets/download_4.jpg" alt="">
+                </div>
+                <div class="component-code-examples">
+                    <img class="img-thumbnail" height="200" width="200" src="../Assets/download_4.jpg" alt="">
+                </div>
+
+                <div class="componet-sub-heading">
+                    <h3>Aligning images</h3>
+                    <p>Align images with the helper float classes or text alignment classes. block-level images can be
+                        centered using the .mx-auto margin utility class.</p>
+                </div>
+
+                <div class="component-code-examples">
+                    <img class="rounded float-start" height="200" width="200" src="../Assets/download_4.jpg" alt="">
+                    <img class="rounded float-end" height="200" width="200" src="../Assets/download_4.jpg" alt="">
+                </div>
+
+                <div class="component-code-examples">
+                    <img class="rounded mx-auto d-block" height="200" width="200" src="../Assets/download_4.jpg" alt="">
+                </div>
+
+
+                <div class="component-code-examples">
+                    <div class="txt-center">
+                        <img class="rounded" height="200" width="200" src="../Assets/download_4.jpg" alt="">
+                    </div>
+                </div>
+
+            </main>
+        </div>
+        <hr class="hr">
+
+        <footer class="footer flex-row-spc-btw">
+            <p>Paul Micheal</p>
+            <nav class="footer-actions">
+                <ul class="flex-row-center-center">
+                    <li><i class="fa-brands fa-2x fa-github"></i></li>
+                    <li><i class="fa-brands fa-2x fa-twitter"></i></li>
+                    <li><i class="fa-brands fa-2x fa-linkedin"></i></li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+</body>
+
+</html>
