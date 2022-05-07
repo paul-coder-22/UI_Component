@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/30e8ebdaf5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../Css/primary.css">
+    <link rel="stylesheet" href="../../Components/component.css">
+    <script src="../../main.js" defer></script>
+    <title>Modal | dynoCss</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav-bar flex-row-spc-btw">
+            <div class="nav-header">
+                <h1 class="nav-logo"><a href="./index.html"></a>dynoCss</h1>
+            </div>
+            <nav class="nav-actions">
+                <ul class="flex-row-spc-btw">
+                    <li><i class="fa-brands fa-2x fa-github"></i></li>
+                </ul>
+            </nav>
+        </div>
+        <hr class="hr">
+        <div class="grid-doc-layout">
+            <main class="main">
+                <div class="component-intro">
+                    <h2>Modal</h2>
+                    <p>Modals are built with HTML, CSS, and JavaScript. They’re positioned over everything else in the
+                        document and remove scroll from the
+                        <code><body></code> so that modal content scrolls instead.
+                    </p>
+                </div>
+
+                <div class="componet-sub-heading">
+                    <h3>Modal components </h3>
+                    <p>Below is a static modal example (meaning its position and display have been overridden). Included
+                        are the modal header, modal body (required for padding), and modal footer (optional). We ask
+                        that you include modal headers with dismiss actions whenever possible, or provide another
+                        explicit dismiss action.
+                    </p>
+                </div>
+
+                <div class="component-code-examples bd-example-modal">
+                    <div class="modal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Modal tiltle</h5>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Modal body text goes here</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-secondary">Click</button>
+                                    <button class="btn btn-primary">Save Changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="componet-sub-heading">
+                    <h3>Live demo</h3>
+                    <p>Toggle a working modal demo by clicking the button below. It will slide down and fade in from the
+                        top of the page.
+                    </p>
+                </div>
+
+
+                <div class="component-code-examples bd-example-modal">
+                    <button class="btn btn-primary" id="myBtn">Primary</button>
+                    <div class="modal hide-content" id="modal-demo-container">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Modal tiltle</h5>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Modal body text goes here</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-secondary" id="closeBtn">Cancel</button>
+                                    <button class="btn btn-primary">Save Changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+        <hr class="hr">
+
+        <footer class="footer flex-row-spc-btw">
+            <p>Paul Micheal</p>
+            <nav class="footer-actions">
+                <ul class="flex-row-center-center">
+                    <li><i class="fa-brands fa-2x fa-github"></i></li>
+                    <li><i class="fa-brands fa-2x fa-twitter"></i></li>
+                    <li><i class="fa-brands fa-2x fa-linkedin"></i></li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+</body>
+
+</html>
