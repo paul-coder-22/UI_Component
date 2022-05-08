@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/30e8ebdaf5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../Css/primary.css">
+    <link rel="stylesheet" href="../../Components/component.css">
+    <script src="/main.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav-bar flex-row-spc-btw">
+            <div class="nav-header">
+                <h1 class="nav-logo"><a href="./index.html"></a>dynoCss</h1>
+            </div>
+            <nav class="nav-actions">
+                <ul class="flex-row-spc-btw">
+                    <li><i class="fa-brands fa-2x fa-github"></i></li>
+                </ul>
+            </nav>
+        </div>
+        <hr class="hr">
+        <div class="grid-doc-layout">
+            <main class="main">
+                <div class="component-intro">
+                    <h2>Toasts</h2>
+                    <p>Push notifications to your visitors with a toast, a lightweight and easily customizable alert
+                        message.</p>
+                </div>
+
+                <div class="componet-sub-heading">
+                    <h3>Overview</h3>
+                    <p>To encourage extensible and predictable toasts, we recommend a header and body. Toast headers use
+                        display: flex, allowing easy alignment of content thanks to our margin and flexbox utilities.
+                    </p>
+                    <br>
+                    <p>
+                        Toasts are as flexible as you need and have very little required markup. At a minimum, we
+                        require a single element to contain your “toasted” content and strongly encourage a dismiss
+                        button.
+                    </p>
+                </div>
+
+                <div class="component-code-examples">
+                    <div class="toast fade">
+                        <div class="toast-header">
+                            <svg class="bd-placeholder-img rounded me-2" width="20" height="20"
+                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <rect width="100%" height="100%" fill="#007aff"></rect>
+                            </svg>
+                            <strong class="me-auto">Bootstrap</strong>
+                            <button class="btn  btn-sm">X</button>
+                        </div>
+                        <div class="toast-body">
+                            Hello, world! This is a toast message.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="componet-sub-heading">
+                    <h3>Live example </h3>
+                    <p>Click the button below to show a toast (positioned with our utilities in the lower right corner)
+                        that has been hidden by default.
+                    </p>
+                </div>
+
+                <div class="component-code-examples">
+
+                    <div class="btn btn-primary" id="liveToastButton">Show live toast</div>
+                    <div class="position-fixed top-1 end-0 p-3">
+                        <div class="toast fade hide-content" id="liveToast">
+                            <div class="toast-header">
+                                <svg class="bd-placeholder-img rounded me-2" width="20" height="20"
+                                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                                    <rect width="100%" height="100%" fill="#007aff"></rect>
+                                </svg>
+                                <strong class="me-auto">Bootstrap</strong>
+                                <button class="btn  btn-sm" id="closeBtn">X</button>
+                            </div>
+                            <div class="toast-body">
+                                Hello, world! This is a toast message.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="componet-sub-heading">
+                    <h3>Stacking</h3>
+                    <p>You can stack toasts by wrapping them in a toast container, which will vertically add some
+                        spacing.
+                    </p>
+                </div>
+
+
+                <div class="component-code-examples">
+
+                    <div class="toast-container">
+                        <div class="toast fade " id="liveToast">
+                            <div class="toast-header">
+                                <svg class="bd-placeholder-img rounded me-2" width="20" height="20"
+                                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                                    <rect width="100%" height="100%" fill="#007aff"></rect>
+                                </svg>
+                                <strong class="me-auto">Bootstrap</strong>
+                                <button class="btn  btn-sm" id="closeBtn">X</button>
+                            </div>
+                            <div class="toast-body">
+                                Hello, world! This is a toast message.
+                            </div>
+                        </div>
+                        <div class="toast fade " id="liveToast">
+                            <div class="toast-header">
+                                <svg class="bd-placeholder-img rounded me-2" width="20" height="20"
+                                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                                    <rect width="100%" height="100%" fill="#007aff"></rect>
+                                </svg>
+                                <strong class="me-auto">Bootstrap</strong>
+                                <button class="btn  btn-sm" id="closeBtn">X</button>
+                            </div>
+                            <div class="toast-body">
+                                Hello, world! This is a toast message.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="componet-sub-heading">
+                    <h3>Color schemes </h3>
+                    <p>Building on the above example, you can create different toast color schemes with our color and
+                        background utilities. Here we’ve added .bg-primary and .text-white to the .toast, and then added
+                        .btn-close-white to our close button. For a crisp edge, we remove the default border with
+                        .border-0.
+                    </p>
+                </div>
+
+                <div class="component-code-examples">
+                    <div class="toast fade bg-primary" id="liveToast">
+                        <div class="flex-row-spc-btw">
+                            <div class="toast-body">
+                                Hello, world! This is a toast message.
+                            </div>
+
+                            <button class="btn  btn-sm " id="closeBtn">X</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="componet-sub-heading">
+                    <h3>Placements </h3>
+                    <p>Place toasts with custom CSS as you need them. The top right is often used for notifications, as
+                        is the top middle. If you’re only ever going to show one toast at a time, put the positioning
+                        styles right on the .toast..
+                    </p>
+                </div>
+
+                <div class="component-code-examples">
+                    <div class="flex-row-center-center">
+                        <buton class="btn btn-outline-primary btn-sm" id="topRight">Top-right</buton>
+                        <buton class="btn btn-outline-primary btn-sm" id="bottomRight">Bottom-right</buton>
+                        <buton class="btn btn-outline-primary btn-sm" id="bottomLeft">Bottom-left</buton>
+                    </div>
+                    <div class="position-fixed p-3 " id="toastPlacement">
+                        <div class="toast fade " id="liveToast">
+                            <div class="flex-row-spc-btw">
+                                <div class="toast-body">
+                                    Hello, world! This is a toast message.
+                                </div>
+                                <button class="btn  btn-sm " id="closeBtn">X</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+        <hr class="hr">
+
+        <footer class="footer flex-row-spc-btw">
+            <p>Paul Micheal</p>
+            <nav class="footer-actions">
+                <ul class="flex-row-center-center">
+                    <li><i class="fa-brands fa-2x fa-github"></i></li>
+                    <li><i class="fa-brands fa-2x fa-twitter"></i></li>
+                    <li><i class="fa-brands fa-2x fa-linkedin"></i></li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+</body>
+
+</html>

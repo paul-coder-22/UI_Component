@@ -255,9 +255,35 @@ p {
   margin-right: auto !important;
   margin-left: auto !important;
 }
+.me-auto {
+  margin-right: auto !important;
+}
+.me-2 {
+  margin-right: 0.5rem !important;
+}
 
 /* block elements */
 
 .d-block {
   display: block !important;
+}
+
+/* utilities */
+.position-fixed {
+  position: fixed !important;
+}
+.top-1 {
+  top: 1px !important;
+}
+.bottom-0 {
+  bottom: 0 !important;
+}
+.end-0 {
+  right: 0 !important;
+}
+.first-0 {
+  left: 1px !important;
+}
+.p-3 {
+  padding: 1rem !important;
 }
