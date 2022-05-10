@@ -258,6 +258,9 @@ p {
 .me-auto {
   margin-right: auto !important;
 }
+.me-1 {
+  margin-right: 0.25rem !important;
+}
 .me-2 {
   margin-right: 0.5rem !important;
 }
@@ -286,4 +289,11 @@ p {
 }
 .p-3 {
   padding: 1rem !important;
+}
+
+/* code color */
+code {
+  font-size: 0.875em;
+  color: #d63384;
+  word-wrap: break-word;
 }
