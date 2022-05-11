@@ -61,7 +61,7 @@ liveToastButton?.addEventListener('click', () => {
     }, 5000);
 })
 
-closeBtn.addEventListener("click", () => {
+closeBtn?.addEventListener("click", () => {
 
     liveToast.classList.add(CLASS_NAME_HIDE)
 })
@@ -101,3 +101,19 @@ let hideToaster = () => {
     }, 3000);
 }
 
+
+
+/* navbar */
+const navBarhiddedContent = document.querySelector('.collapse')
+const navbarCollapseBtn = document.querySelector('#navbarCollapseBtn')
+
+navbarCollapseBtn?.addEventListener("click", () => {
+    console.log(navBarhiddedContent.style.display);
+    if (navBarhiddedContent.style.display === "") {
+        navBarhiddedContent.style.display = "block"
+    } else if (navBarhiddedContent.style.display === "block") {
+        navBarhiddedContent.style.display = "none"
+    } else if (navBarhiddedContent.style.display = "none") {
+        navBarhiddedContent.style.display = "block"
+    }
+})

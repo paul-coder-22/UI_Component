@@ -13,3 +13,13 @@
 .footer-actions li {
   margin: 0 var(--margin-sm);
 }
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}

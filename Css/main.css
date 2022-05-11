@@ -26,3 +26,6 @@
   border-radius: 3px;
   padding: var(--padding-md) 0;
 }
+.component-code-examples {
+  background-color: #ffff;
+}
