@@ -1,0 +1,25 @@
+.form-label {
+  margin-bottom: 0.5rem;
+}
+label {
+  display: inline-block;
+}
+.form-range {
+  width: 100%;
+  padding: 0;
+  background-color: #eee;
+  border-radius: 9rem;
+  height: 0.5rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: var(--clr-secondary);
+  cursor: pointer;
+}
